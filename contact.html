@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系客服 - Swing Core</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <style>
+        .contact-page {
+            min-height: 100vh;
+            padding: 120px 20px 60px;
+        }
+        .contact-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .contact-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        .contact-card h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .contact-item-icon {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            background: var(--bg-gray);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-item-content h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: var(--text-primary);
+        }
+        .contact-item-content p {
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+        }
+        .contact-form h3 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+        .form-group {
+            margin-bottom: 24px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.1);
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .submit-btn:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+        .faq-section {
+            background: var(--bg-gray);
+            padding: 40px;
+            border-radius: 20px;
+        }
+        .faq-section h3 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+        .faq-link {
+            display: inline-block;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .faq-link:hover {
+            text-decoration: underline;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" style="text-decoration: none; color: inherit;">IntelliCore 龙芯智造</a>
+            <ul class="nav-links">
+                <li><a href="index.html#overview">概览</a></li>
+                <li><a href="index.html#features">功能</a></li>
+                <li><a href="index.html#specs">技术规格</a></li>
+                <li><a href="index.html#victo-app">APP</a></li>
+            </ul>
+            <div class="nav-buy">
+                <a href="index.html#buy" class="buy-button">购买</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-page">
+        <div class="contact-content">
+            <h1 class="section-title">联系客服</h1>
+            <p class="section-subtitle">我们随时为您提供帮助</p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>联系方式</h3>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <div class="contact-item-content">
+                            <h4>客服电话</h4>
+                            <p>400-888-8888</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">💬</div>
+                        <div class="contact-item-content">
+                            <h4>微信客服</h4>
+                            <p>huiji_service</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div class="contact-item-content">
+                            <h4>邮箱支持</h4>
+                            <p>service@intellicore.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">🕐</div>
+                        <div class="contact-item-content">
+                            <h4>服务时间</h4>
+                            <p>工作日 9:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>在线留言</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>您的姓名</label>
+                            <input type="text" placeholder="请输入您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label>联系电话</label>
+                            <input type="tel" placeholder="请输入您的电话">
+                        </div>
+                        <div class="form-group">
+                            <label>电子邮箱</label>
+                            <input type="email" placeholder="请输入您的邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label>问题类型</label>
+                            <select>
+                                <option>产品咨询</option>
+                                <option>技术支持</option>
+                                <option>售后问题</option>
+                                <option>商务合作</option>
+                                <option>其他问题</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>问题描述</label>
+                            <textarea placeholder="请详细描述您的问题"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">提交留言</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h3>常见问题</h3>
+                <p>如果您有其他问题，也可以查看我们的<a href="index.html#faq" class="faq-link">常见问题页面</a></p>
+            </div>
+
+            <a href="index.html" class="back-home">← 返回首页</a>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">IntelliCore</div>
+                    <p class="footer-tagline">你的私人网球数据教练</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>产品</h4>
+                        <a href="index.html#overview">产品概览</a>
+                        <a href="index.html#features">核心功能</a>
+                        <a href="index.html#specs">技术规格</a>
+                        <a href="index.html#victo-app">APP介绍</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>支持</h4>
+                        <a href="index.html#faq">常见问题</a>
+                        <a href="tutorial.html">使用教程</a>
+                        <a href="download.html">下载APP</a>
+                        <a href="contact.html">联系客服</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>公司</h4>
+                        <a href="about.html">关于我们</a>
+                        <a href="news.html">新闻动态</a>
+                        <a href="join.html">加入我们</a>
+                        <a href="partner.html">合作伙伴</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © 2025 龙芯智造（上海）科技有限公司. 保留所有权利.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">隐私政策</a>
+                    <a href="terms.html">使用条款</a>
+                    <a href="sales.html">销售政策</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

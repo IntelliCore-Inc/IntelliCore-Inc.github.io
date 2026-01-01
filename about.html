@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - Swing Core</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <style>
+        .about-page {
+            padding: 120px 20px 60px;
+        }
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .about-hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .about-hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        .about-hero p {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .about-section {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 30px;
+        }
+        .about-section h2 {
+            font-size: 32px;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+        .about-section h3 {
+            font-size: 24px;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        .about-section p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .value-card {
+            background: var(--bg-gray);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .value-card-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .value-card h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+        .value-card p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+        .team-section {
+            background: var(--bg-gray);
+            padding: 60px 40px;
+            border-radius: 20px;
+        }
+        .team-section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: var(--text-primary);
+        }
+        .team-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+        .stat-item h3 {
+            font-size: 48px;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+        .stat-item p {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-home:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .values-grid,
+            .team-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .values-grid,
+            .team-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" style="text-decoration: none; color: inherit;">IntelliCore 龙芯智造</a>
+            <ul class="nav-links">
+                <li><a href="index.html#overview">概览</a></li>
+                <li><a href="index.html#features">功能</a></li>
+                <li><a href="index.html#specs">技术规格</a></li>
+                <li><a href="index.html#victo-app">APP</a></li>
+            </ul>
+            <div class="nav-buy">
+                <a href="index.html#buy" class="buy-button">购买</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="about-page">
+        <div class="about-content">
+            <div class="about-hero">
+                <h1>关于龙芯智造</h1>
+                <p>用科技驱动运动，用数据赋能成长</p>
+            </div>
+
+            <div class="about-section">
+                <h2>公司简介</h2>
+                <p>龙芯智造（上海）科技有限公司（IntelliCore）成立于2025年，是一家专注于智能运动硬件和运动数据分析的创新型科技公司。我们致力于通过先进的传感器技术和人工智能算法，为运动爱好者提供专业的数据化训练解决方案。</p>
+                <p>我们的核心产品Swing Core是一套专业的网球智能训练系统，通过高精度传感器实时采集挥拍数据，配合AI智能分析，帮助用户科学提升技术水平。</p>
+            </div>
+
+            <div class="about-section">
+                <h2>企业使命</h2>
+                <p>让每一次运动都有数据支撑，让每个人都能科学训练。我们相信，通过精准的数据测量和智能分析，可以帮助更多人实现运动水平的快速提升。</p>
+            </div>
+
+            <div class="about-section">
+                <h2>核心价值观</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-card-icon">🎯</div>
+                        <h4>精准</h4>
+                        <p>数据测量精确到毫秒级，确保分析结果的准确性和可靠性</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card-icon">💡</div>
+                        <h4>创新</h4>
+                        <p>持续投入研发，不断突破技术边界，引领行业发展</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-card-icon">🤝</div>
+                        <h4>服务</h4>
+                        <p>以用户为中心，提供优质的售前售后服务体验</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h2>我们的团队</h2>
+                <div class="team-stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>研发人员</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>核心专利</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10000+</h3>
+                        <p>服务用户</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100+</h3>
+                        <p>合作俱乐部</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2>联系方式</h2>
+                <h3>公司地址</h3>
+                <p>上海市浦东新区张江高科技园区科苑路88号</p>
+                <h3>商务合作</h3>
+                <p>邮箱：business@intellicore.com</p>
+                <h3>媒体报道</h3>
+                <p>邮箱：media@intellicore.com</p>
+            </div>
+
+            <a href="index.html" class="back-home">← 返回首页</a>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">IntelliCore</div>
+                    <p class="footer-tagline">你的私人网球数据教练</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>产品</h4>
+                        <a href="index.html#overview">产品概览</a>
+                        <a href="index.html#features">核心功能</a>
+                        <a href="index.html#specs">技术规格</a>
+                        <a href="index.html#victo-app">APP介绍</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>支持</h4>
+                        <a href="index.html#faq">常见问题</a>
+                        <a href="tutorial.html">使用教程</a>
+                        <a href="download.html">下载APP</a>
+                        <a href="contact.html">联系客服</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>公司</h4>
+                        <a href="about.html">关于我们</a>
+                        <a href="news.html">新闻动态</a>
+                        <a href="join.html">加入我们</a>
+                        <a href="partner.html">合作伙伴</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © 2025 龙芯智造（上海）科技有限公司. 保留所有权利.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">隐私政策</a>
+                    <a href="terms.html">使用条款</a>
+                    <a href="sales.html">销售政策</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swing Core - 龙芯智造（上海）科技有限公司</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" style="text-decoration: none; color: inherit;">IntelliCore 龙芯智造</a>
+            <ul class="nav-links">
+                <li><a href="#overview">概览</a></li>
+                <li><a href="#features">功能</a></li>
+                <li><a href="#specs">技术规格</a></li>
+                <li><a href="#victo-app" class="nav-app-link">APP</a></li>
+            </ul>
+            <div class="nav-buy">
+                <a href="#buy" class="buy-button">购买</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主视觉区域 -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Swing Core</h1>
+            <p class="hero-subtitle">精准量化 · 即时反馈 · 个性指导</p>
+            <div class="hero-cta">
+                <a href="#buy" class="cta-button">立即购买</a>
+                <a href="#overview" class="learn-more">了解更多</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="tennis-ball-wrapper">
+                <img src="images/ball.png" alt="网球" class="tennis-ball-image">
+                <div class="ball-shadow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品概览 -->
+    <section id="overview" class="overview">
+        <div class="container">
+            <h2 class="section-title">让每一次挥拍都算数</h2>
+            <p class="section-subtitle">Swing Core —— 你的私人网球数据教练</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>精准量化</h3>
+                    <p>告别"凭感觉练球"，用数据定义每一次挥拍。实时采集击球速度、力度、角度、握拍位置等关键参数。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>即时反馈</h3>
+                    <p>击球后3秒内获取动作分析，强化学习闭环，让你即时了解每次挥拍的技术细节。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>个性指导</h3>
+                    <p>基于用户历史数据，AI推荐针对性训练计划，助你科学提升技术水平。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎾</div>
+                    <h3>轻便无感</h3>
+                    <p>模块重量<20g，嵌入拍柄不影响握感与平衡，真正做到"无感佩戴"。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心功能 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">核心功能</h2>
+            <p class="section-subtitle">强大技术，全面掌控你的训练</p>
+
+            <div class="feature-tabs">
+                <button class="tab-btn active" data-tab="sensors">智能传感器</button>
+                <button class="tab-btn" data-tab="application">手机APP</button>
+                <button class="tab-btn" data-tab="cloud">云端服务</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="sensors" class="tab-pane active">
+                    <div class="feature-detail">
+                        <div class="feature-text">
+                            <h3>高精度传感器模块</h3>
+                            <p class="feature-desc">采用ARM高性能主控芯片，配备6轴惯性测量单元和4通道柔性压力传感器阵列，精准捕捉每一次挥拍。</p>
+                            <ul class="spec-list">
+                                <li><span class="spec-label">芯片：</span>ARM高性能芯片</li>
+                                <li><span class="spec-label">IMU：</span>6轴惯性测量单元</li>
+                                <li><span class="spec-label">握拍检测：</span>4通道压力传感器阵列</li>
+                                <li><span class="spec-label">续航：</span>待机30天，连续使用8小时</li>
+                            </ul>
+                        </div>
+                        <div class="feature-visual">
+                            <img src="images/chips.jpg" alt="智能传感器模块" class="feature-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="application" class="tab-pane">
+                    <div class="feature-detail">
+                        <div class="feature-text">
+                            <h3>智能训练APP</h3>
+                            <p class="feature-desc">四大核心模块，涵盖社区分享、实时运动记录、AI智能建议和个人中心，打造完整的训练生态。</p>
+                            <ul class="spec-list">
+                                <li><span class="spec-label">广场：</span>瀑布流卡片，分享运动动态</li>
+                                <li><span class="spec-label">运动：</span>蓝牙配对，实时数据同步</li>
+                                <li><span class="spec-label">建议：</span>AI教练，对话式训练指导</li>
+                                <li><span class="spec-label">我的：</span>个人中心，数据管理</li>
+                            </ul>
+                            <div class="download-buttons">
+                                <a href="#" class="download-btn ios">
+                                    <span class="btn-icon">
+                                        <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M645.289723 165.758826C677.460161 122.793797 701.865322 62.036894 693.033384 0c-52.607627 3.797306-114.089859 38.61306-149.972271 84.010072-32.682435 41.130375-59.562245 102.313942-49.066319 161.705521 57.514259 1.834654 116.863172-33.834427 151.294929-79.956767zM938.663644 753.402663c-23.295835 52.820959-34.517089 76.415459-64.511543 123.177795-41.855704 65.279538-100.905952 146.644295-174.121433 147.198957-64.980873 0.725328-81.748754-43.30636-169.982796-42.751697-88.234042 0.46933-106.623245 43.605024-171.732117 42.965029-73.130149-0.682662-129.065752-74.026142-170.964122-139.348347-117.11917-182.441374-129.44975-396.626524-57.172928-510.545717 51.327636-80.895427 132.393729-128.212425 208.553189-128.212425 77.482118 0 126.207106 43.519692 190.377318 43.519692 62.292892 0 100.137957-43.647691 189.779989-43.647691 67.839519 0 139.732344 37.802399 190.889315 103.03927-167.678812 94.036667-140.543004 339.069598 28.885128 404.605134z" fill="#ffffff"></path></svg>
+                                    </span>
+                                    <span class="btn-text">
+                                        <span class="btn-small">下载于</span>
+                                        <span class="btn-large">App Store</span>
+                                    </span>
+                                </a>
+                                <a href="#" class="download-btn android">
+                                    <span class="btn-icon">
+                                        <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M264.566 203a15 15 0 0 0-15.014 14.986l-0.552 589.358a15 15 0 0 0 22.646 12.92l497.348-294.7a15 15 0 0 0 0.004-25.806L272.204 205.1a15 15 0 0 0-7.64-2.098z m53.55-75.31l496.796 294.66c49.876 29.584 66.328 93.998 36.744 143.874a105 105 0 0 1-36.784 36.768l-497.346 294.7c-49.89 29.56-114.298 13.08-143.86-36.808A105 105 0 0 1 159 807.26l0.552-589.36c0.054-57.988 47.108-104.954 105.098-104.9a105 105 0 0 1 53.466 14.69z" fill="#ffffff"></path></svg>
+                                    </span>
+                                    <span class="btn-text">
+                                        <span class="btn-small">下载于</span>
+                                        <span class="btn-large">Google Play</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="feature-visual">
+                            <div class="phone-frame">
+                                <img src="images/app.png" alt="Victo APP界面" class="phone-screen-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cloud" class="tab-pane">
+                    <div class="feature-detail">
+                        <div class="feature-text">
+                            <h3>云端数据服务</h3>
+                            <p class="feature-desc">云端存储与同步，历史数据永不丢失。多人对战排行榜，与好友一较高下。教练端管理后台，学员进度一目了然。</p>
+                            <ul class="spec-list">
+                                <li><span class="spec-label">数据同步：</span>离线存储，联网自动上传</li>
+                                <li><span class="spec-label">历史分析：</span>完整轨迹回放与对比</li>
+                                <li><span class="spec-label">排行榜：</span>俱乐部多人对战</li>
+                                <li><span class="spec-label">教练后台：</span>查看学员详细进度</li>
+                            </ul>
+                        </div>
+                        <div class="feature-visual">
+                            <img src="images/cloud.jpg" alt="云端数据服务" class="feature-image cloud-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术规格 -->
+    <section id="specs" class="specs">
+        <div class="container">
+            <h2 class="section-title">技术规格</h2>
+            <p class="section-subtitle">专业级配置，性能卓越</p>
+
+            <div class="specs-grid">
+                <div class="spec-category">
+                    <h3>硬件配置</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <td>主控芯片</td>
+                            <td>ARM高性能芯片</td>
+                        </tr>
+                        <tr>
+                            <td>处理器核心</td>
+                            <td>32位高性能核心</td>
+                        </tr>
+                        <tr>
+                            <td>惯性测量单元</td>
+                            <td>6轴IMU</td>
+                        </tr>
+                        <tr>
+                            <td>压力传感器</td>
+                            <td>4通道柔性阵列</td>
+                        </tr>
+                        <tr>
+                            <td>无线通信</td>
+                            <td>BLE 5.0</td>
+                        </tr>
+                        <tr>
+                            <td>电源</td>
+                            <td>CR2032纽扣电池</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="spec-category">
+                    <h3>性能参数</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <td>加速度量程</td>
+                            <td>±16g</td>
+                        </tr>
+                        <tr>
+                            <td>采样频率</td>
+                            <td>最高1000Hz</td>
+                        </tr>
+                        <tr>
+                            <td>传输距离</td>
+                            <td>30m（BLE）</td>
+                        </tr>
+                        <tr>
+                            <td>待机时间</td>
+                            <td>30天</td>
+                        </tr>
+                        <tr>
+                            <td>连续使用</td>
+                            <td>8小时</td>
+                        </tr>
+                        <tr>
+                            <td>模块重量</td>
+                            <td>&lt;20g</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="spec-category">
+                    <h3>支持平台</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <td>移动端</td>
+                            <td>Android / iOS</td>
+                        </tr>
+                        <tr>
+                            <td>最低系统</td>
+                            <td>Android 8.0 / iOS 13</td>
+                        </tr>
+                        <tr>
+                            <td>蓝牙版本</td>
+                            <td>BLE 5.0及以上</td>
+                        </tr>
+                        <tr>
+                            <td>网络要求</td>
+                            <td>可选，支持离线使用</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APP展示 -->
+    <section id="victo-app" class="app-showcase">
+        <div class="container">
+            <h2 class="section-title">Victo APP</h2>
+            <p class="section-subtitle">四大模块，打造完整训练生态</p>
+
+            <div class="app-download-section">
+                <div class="download-buttons-center">
+                    <a href="#" class="download-btn ios">
+                        <span class="btn-icon">
+                            <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M645.289723 165.758826C677.460161 122.793797 701.865322 62.036894 693.033384 0c-52.607627 3.797306-114.089859 38.61306-149.972271 84.010072-32.682435 41.130375-59.562245 102.313942-49.066319 161.705521 57.514259 1.834654 116.863172-33.834427 151.294929-79.956767zM938.663644 753.402663c-23.295835 52.820959-34.517089 76.415459-64.511543 123.177795-41.855704 65.279538-100.905952 146.644295-174.121433 147.198957-64.980873 0.725328-81.748754-43.30636-169.982796-42.751697-88.234042 0.46933-106.623245 43.605024-171.732117 42.965029-73.130149-0.682662-129.065752-74.026142-170.964122-139.348347-117.11917-182.441374-129.44975-396.626524-57.172928-510.545717 51.327636-80.895427 132.393729-128.212425 208.553189-128.212425 77.482118 0 126.207106 43.519692 190.377318 43.519692 62.292892 0 100.137957-43.647691 189.779989-43.647691 67.839519 0 139.732344 37.802399 190.889315 103.03927-167.678812 94.036667-140.543004 339.069598 28.885128 404.605134z" fill="#ffffff"></path></svg>
+                        </span>
+                        <span class="btn-text">
+                            <span class="btn-small">下载于</span>
+                            <span class="btn-large">App Store</span>
+                        </span>
+                    </a>
+                    <a href="#" class="download-btn android">
+                        <span class="btn-icon">
+                            <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M264.566 203a15 15 0 0 0-15.014 14.986l-0.552 589.358a15 15 0 0 0 22.646 12.92l497.348-294.7a15 15 0 0 0 0.004-25.806L272.204 205.1a15 15 0 0 0-7.64-2.098z m53.55-75.31l496.796 294.66c49.876 29.584 66.328 93.998 36.744 143.874a105 105 0 0 1-36.784 36.768l-497.346 294.7c-49.89 29.56-114.298 13.08-143.86-36.808A105 105 0 0 1 159 807.26l0.552-589.36c0.054-57.988 47.108-104.954 105.098-104.9a105 105 0 0 1 53.466 14.69z" fill="#ffffff"></path></svg>
+                        </span>
+                        <span class="btn-text">
+                            <span class="btn-small">下载于</span>
+                            <span class="btn-large">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="app-modules">
+                <div class="module-card">
+                    <div class="module-icon">🏠</div>
+                    <h3>广场</h3>
+                    <p>瀑布流卡片布局，分享运动动态。点击卡片查看详情，支持评论点赞和生成海报分享。</p>
+                    <div class="module-tags">
+                        <span>社区</span>
+                        <span>分享</span>
+                        <span>互动</span>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">🎾</div>
+                    <h3>运动</h3>
+                    <p>蓝牙配对传感器，实时同步运动数据。数据按日期分组，详情页显示技术参数和对比曲线。</p>
+                    <div class="module-tags">
+                        <span>实时数据</span>
+                        <span>历史记录</span>
+                        <span>动画回放</span>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">💬</div>
+                    <h3>建议</h3>
+                    <p>AI智能教练，对话式训练指导。自动识别技术问题，提供个性化训练建议。</p>
+                    <div class="module-tags">
+                        <span>AI教练</span>
+                        <span>个性化</span>
+                        <span>对话式</span>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">👤</div>
+                    <h3>我的</h3>
+                    <p>个人中心，管理资料和设置。好友管理、同步策略、缓存清理等功能一应俱全。</p>
+                    <div class="module-tags">
+                        <span>个人中心</span>
+                        <span>数据管理</span>
+                        <span>设置</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 对比优势 -->
+    <section class="comparison">
+        <div class="container">
+            <h2 class="section-title">为什么选择Swing Core</h2>
+            <p class="section-subtitle">相比竞品的三大核心优势</p>
+
+            <div class="comparison-grid">
+                <div class="compare-card">
+                    <div class="compare-price">¥399</div>
+                    <h3>Swing Core</h3>
+                    <ul class="compare-features">
+                        <li class="check">✓ 握拍位置检测</li>
+                        <li class="check">✓ 击球力度分析</li>
+                        <li class="check">✓ 3D动作回放</li>
+                        <li class="check">✓ AI训练建议</li>
+                        <li class="check">✓ 离线使用</li>
+                        <li class="check">✓ 社区分享</li>
+                    </ul>
+                    <a href="#buy" class="compare-btn">立即购买</a>
+                </div>
+
+                <div class="compare-card competitor">
+                    <div class="compare-price">¥2000+</div>
+                    <h3>高端穿戴设备</h3>
+                    <ul class="compare-features">
+                        <li class="cross">✗ 握拍位置检测</li>
+                        <li class="check">✓ 击球力度分析</li>
+                        <li class="check">✓ 动作回放</li>
+                        <li class="cross">✗ AI训练建议</li>
+                        <li class="cross">✗ 离线使用</li>
+                        <li class="cross">✗ 社区分享</li>
+                    </ul>
+                    <div class="compare-btn disabled">功能冗余</div>
+                </div>
+
+                <div class="compare-card competitor">
+                    <div class="compare-price">¥198/年</div>
+                    <h3>纯软件APP</h3>
+                    <ul class="compare-features">
+                        <li class="cross">✗ 握拍位置检测</li>
+                        <li class="cross">✗ 击球力度分析</li>
+                        <li class="cross">✗ 动作回放</li>
+                        <li class="check">✓ AI分析</li>
+                        <li class="cross">✗ 离线使用</li>
+                        <li class="cross">✗ 社区分享</li>
+                    </ul>
+                    <div class="compare-btn disabled">依赖摄像头</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户场景 -->
+    <section class="scenarios">
+        <div class="container">
+            <h2 class="section-title">适用人群</h2>
+            <p class="section-subtitle">无论你是谁，Swing Core都能帮助你</p>
+
+            <div class="scenario-list">
+                <div class="scenario-item">
+                    <div class="scenario-age">8-16岁</div>
+                    <h3>青少年学员</h3>
+                    <p>动作不规范、家长无法监督训练质量？Swing Core提供客观数据支撑，帮助孩子形成正确动作定型。</p>
+                </div>
+
+                <div class="scenario-item">
+                    <div class="scenario-age">18-45岁</div>
+                    <h3>业余爱好者</h3>
+                    <p>自学无门、难以突破瓶颈？Swing Core提供精准数据反馈，针对性提升技术短板。</p>
+                </div>
+
+                <div class="scenario-item">
+                    <div class="scenario-age">专业教练</div>
+                    <h3>基层教练</h3>
+                    <p>缺乏数字化教学工具，难以规模化带教？Swing Core提供完整教学后台，批量管理学员进度。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 购买区域 -->
+    <section id="buy" class="buy">
+        <div class="container">
+            <h2 class="section-title">立即购买</h2>
+            <p class="section-subtitle">开启你的智能网球训练之旅</p>
+
+            <div class="buy-options">
+                <div class="buy-card">
+                    <div class="buy-name">Swing Core基础版</div>
+                    <div class="buy-price">
+                        <span class="price-symbol">¥</span>
+                        <span class="price-number">399</span>
+                    </div>
+                    <p class="buy-desc">包含传感器模块 + APP会员1年</p>
+                    <ul class="buy-features">
+                        <li>✓ Swing Core传感器模块 x1</li>
+                        <li>✓ APP基础功能</li>
+                        <li>✓ 1年云存储服务</li>
+                        <li>✓ 在线客服支持</li>
+                    </ul>
+                    <button class="buy-btn">立即购买</button>
+                </div>
+
+                <div class="buy-card popular">
+                    <div class="popular-tag">推荐</div>
+                    <div class="buy-name">Swing Core专业版</div>
+                    <div class="buy-price">
+                        <span class="price-symbol">¥</span>
+                        <span class="price-number">599</span>
+                    </div>
+                    <p class="buy-desc">包含传感器模块 + APP永久会员</p>
+                    <ul class="buy-features">
+                        <li>✓ Swing Core传感器模块 x1</li>
+                        <li>✓ APP全部功能解锁</li>
+                        <li>✓ 永久云存储服务</li>
+                        <li>✓ 专属客服支持</li>
+                        <li>✓ 1对1技术指导</li>
+                    </ul>
+                    <button class="buy-btn primary">立即购买</button>
+                </div>
+
+                <div class="buy-card">
+                    <div class="buy-name">俱乐部团购版</div>
+                    <div class="buy-price">
+                        <span class="price-symbol">¥</span>
+                        <span class="price-number">299</span>
+                        <span class="price-unit">/套</span>
+                    </div>
+                    <p class="buy-desc">10套起订，含教练后台权限</p>
+                    <ul class="buy-features">
+                        <li>✓ Swing Core传感器模块 x10+</li>
+                        <li>✓ 机构账号管理</li>
+                        <li>✓ 学员进度追踪</li>
+                        <li>✓ 教练端管理后台</li>
+                        <li>✓ 批量部署支持</li>
+                    </ul>
+                    <button class="buy-btn">联系客服</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">常见问题</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>挥迹如何安装在网球拍上？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>挥迹传感器模块设计为嵌入式，可直接安装在网球拍拍柄底部。安装简单，只需拧开拍柄底盖，插入传感器模块即可，不影响握感和平衡。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>APP是否支持离线使用？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>是的，挥迹支持完全离线使用。传感器数据通过蓝牙传输至手机后暂存本地数据库，待网络恢复后自动同步至云端，确保训练记录不丢失。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>电池续航如何？充电方便吗？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>挥迹采用CR2032纽扣电池，待机时间长达30天，连续使用可达8小时。电池更换简单，可通过模块底部的电池仓快速更换。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>会员到期后数据会丢失吗？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>不会。您的所有数据都会保留在云端和本地，会员到期只是限制部分高级功能的使用，续费后可继续使用全部功能。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>支持哪些品牌的网球拍？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>挥迹适配市面上绝大多数标准网球拍，包括Wilson、Head、Babolat、Yonex等主流品牌。只要拍柄底部可拆卸即可安装。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">IntelliCore</div>
+                    <p class="footer-tagline">你的私人网球数据教练</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>产品</h4>
+                        <a href="index.html#overview">产品概览</a>
+                        <a href="index.html#features">核心功能</a>
+                        <a href="index.html#specs">技术规格</a>
+                        <a href="index.html#victo-app">APP介绍</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>支持</h4>
+                        <a href="faq.html">常见问题</a>
+                        <a href="tutorial.html">使用教程</a>
+                        <a href="download.html">下载APP</a>
+                        <a href="contact.html">联系客服</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>公司</h4>
+                        <a href="about.html">关于我们</a>
+                        <a href="news.html">新闻动态</a>
+                        <a href="join.html">加入我们</a>
+                        <a href="partner.html">合作伙伴</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © 2025 龙芯智造（上海）科技有限公司. 保留所有权利.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">隐私政策</a>
+                    <a href="terms.html">使用条款</a>
+                    <a href="sales.html">销售政策</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
