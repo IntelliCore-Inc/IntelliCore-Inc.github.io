@@ -235,4 +235,4 @@ if ('ontouchstart' in window) {
 
 console.log('Swing Core智能网球训练系统 - 产品页面已加载');
 console.log('版本: 1.0.0');
-console.log('© 2025 龙芯智造（上海）科技有限公司. 保留所有权利.');
+console.log('© 2026 龙芯智造（上海）科技有限公司. 保留所有权利.');
